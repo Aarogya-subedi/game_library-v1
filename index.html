@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Game Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="app">
+
+    <header>
+        <div>
+            <h1>GAME<span>LIBRARY</span></h1>
+            <p>YOUR PERSONAL GAME COMMAND CENTER</p>
+        </div>
+
+        <div class="status">
+            <span class="dot"></span>
+            SYSTEM ONLINE
+        </div>
+    </header>
+
+    <section class="dashboard">
+        <div class="stat">
+            <span>TOTAL GAMES</span>
+            <strong id="gameCount">0</strong>
+        </div>
+
+        <div class="stat">
+            <span>INSTALLED</span>
+            <strong id="installedCount">0</strong>
+        </div>
+
+        <div class="stat">
+            <span>STATUS</span>
+            <strong>READY</strong>
+        </div>
+    </section>
+
+    <section class="controls">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search games..."
+        >
+
+        <button onclick="addGameDialog()">
+            + ADD GAME
+        </button>
+    </section>
+
+    <main id="gameGrid">
+        <div class="empty">
+            <div class="icon">🎮</div>
+            <h2>NO GAMES ADDED</h2>
+            <p>Click "+ ADD GAME" to select a game executable (.exe).</p>
+        </div>
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
